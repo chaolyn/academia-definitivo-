@@ -1,0 +1,79 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+    text-align: center;
+    background-color: #981919;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Estilização da navegação */
+nav {
+    background-color: red;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Estilização dos planos */
+.planos-container {
+display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.plano {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    text-align: center;
+}
+
+.plano h2 {
+    color: #b92929;
+}
+
+.plano p {
+    font-size: 16px;
+    margin-top: 10px;
+}

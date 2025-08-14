@@ -1,0 +1,112 @@
+/* Reset básico - Remove margens e preenchimentos padrão 
+   e define um modelo de caixa mais previsível */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: #8e0000; /* Fundo com tom suave */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilização do cabeçalho */
+h1, h2, h3, h4, h5, h6 {
+    color: #040000; /* Vermelho vibrante, característico do iFood */
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Grid de produtos - Cria um layout responsivo */
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Espaço maior para produtos */
+    gap: 25px;
+    padding: 30px;
+    justify-content: center;
+}
+
+/* Estilização dos blocos de produtos */
+.produto {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+    transform: scale(1.08); /* Efeito suave ao passar o mouse */
+}
+
+/* Estilização das imagens dos produtos */
+.produto img {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* Preço do produto */
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e60000; /* Vermelho chamativo */
+    margin-top: 12px;
+}
+
+/* Botão de compra */
+.botao-comprar {
+    display: inline-block;
+    background-color: #e60000; /* Cor característica do iFood */
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.botao-comprar:hover {
+    background-color: #ff4500; /* Tom mais quente ao passar o mouse */
+}
+
+/* Estilização da navegação */
+ul {
+    list-style: none;
+    display: flex; /* Faz os itens ficarem lado a lado */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    gap: 20px; /* Espaçamento entre os links */
+    padding: 0;
+}
+
+ul li {
+    display: inline-block; /* Garante que os itens fiquem ao lado */
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #b92929; /* Mantém o fundo vermelho */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #f39c12;
+    color: #2c3e50;
+}
+
+
